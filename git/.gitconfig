@@ -1,0 +1,28 @@
+[user]
+    name = Lars Poppe
+    email = no@email.de
+[push]
+    default = simple
+    autoSetupRemote = true
+[core]
+    excludesfile = /home/lars/.gitignore_global
+    editor = nvim
+[alias]
+    praise = blame
+[pull]
+    rebase = false
+    ff = only
+[init]
+    defaultBranch = main
+[credential]
+    helper = store
+[color]
+    ui = true
+[diff]
+    wsErrorHighlight = all
+[commit]
+    verbose = true
+[rebase]
+    stat = true
+[merge]
+    conflictstyle = diff3

@@ -1,0 +1,100 @@
+[
+    // Vim
+    {
+        "command": "toggleVim",
+        "key": "F12"
+    },
+
+    // Show Side Bar
+    {
+        "command": "workbench.action.toggleSidebarVisibility",
+        "key": "ctrl+shift+q"
+    },
+    // Move Lines (vim-like behavior)
+    // https://github.com/VSCodeVim/Vim/issues/4747
+    {
+        "key": "alt+j",
+        "command": "editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+k",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    // indent (tab), outdent
+    // Move highlighted blocks of code left or right
+    {
+        "key": "alt+,",
+        "command": "outdent"
+    },
+    {
+        "key": "alt+.",
+        "command": "tab"
+    },
+    //
+    {
+        "key": "ctrl+shift+l",
+        "command": "workbench.action.moveEditorToNextGroup"
+    },
+    {
+        "key": "ctrl+shift+h",
+        "command": "workbench.action.moveEditorToPreviousGroup"
+    },
+    // Vim Wiki
+    {
+        "command": "wiki.goToWiki",
+        "key": "ctrl+]"
+    },
+    // Resize Panes
+    {
+        "key": "ctrl+alt+k",
+        "command": "workbench.action.decreaseViewHeight"
+    },
+    {
+        "key": "ctrl+alt+l",
+        "command": "workbench.action.increaseViewWidth"
+    },
+    {
+        "key": "ctrl+alt+h",
+        "command": "workbench.action.decreaseViewWidth"
+    },
+    {
+        "key": "ctrl+alt+j",
+        "command": "workbench.action.increaseViewHeight"
+    },
+    // Navigate Splits
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.navigateLeft"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.navigateRight"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.navigateUp"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.navigateDown"
+    },
+    // Navigate buffers
+    {
+        "key": "ctrl+m",
+        "command": "workbench.action.previousEditor"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "workbench.action.nextEditor"
+    },
+    // Terminal in file directory
+    {
+        "key": "ctrl+shift+1",
+        "command": "workbench.action.terminal.newWithCwd",
+        "args": {
+            "cwd": "${fileDirname}"
+        }
+    }
+]
